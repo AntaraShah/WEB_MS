@@ -1,23 +1,27 @@
-# WEB_MS
+# KnowlageBase
 
-This project is running on Angular version 7.2.12 with latest version of Node.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.10.
 
-clone project
-To clone project in your system  use command in your terminal git clone https://github.com/AntaraShah/web_ms.git
-Once cloned, execute npm i. There might be some issue with node-sass module.
-Solution for node-sass
+## Development server
 
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-Remove node-sass from package.json.
-Delete node-modules
+## Code scaffolding
 
-Run npm i
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-Once done, run npm i node-sass@4.12.0 (Refer node-sass version as per your node version)
-Revert changes in package.json.
+## Build
 
-Always delete package-lock.json file from project to avoid issue with installation.
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
+## Running unit tests
 
-Development server
-To run modules: ng serve and navigate to http://localhost:4200/.
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+
+## Running end-to-end tests
+
+Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+
+## Further help
+
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).

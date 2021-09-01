@@ -1,0 +1,41 @@
+<div style="padding: 40px;">
+
+
+  <form [formGroup]="categoryForm" (ngSubmit)="onSubmit(categoryForm.value)">
+    <p-panel header="Add new post">
+      <div class="ui-fluid forms-grid" style="margin: 1em 0">
+        <div>
+          <div>category *</div>
+          <p-dropdown formControlName="category" [(options)]="categoryNameList" [(ngModel)]="selectedName"
+            editable="true" optionLabel="name"></p-dropdown>
+        </div>
+        <div>
+          <div>Content</div>
+          <textarea pInputTextarea type="text" formControlName="description"></textarea>
+        </div>
+        <div>
+          <div>Select File</div>
+          <input type="file" id="myfile" name="myfile">
+
+          <!-- <p-fileUpload 
+            [multiple]="false" 
+            accept="image/*" 
+            maxFileSize="1000000" 
+            [showUploadButton]="false"
+            [showCancelButton]="false" 
+            (onSelect)="onSelectImage($event.files)" 
+        >
+           </p-fileUpload> -->
+        </div>
+        <div>
+              <button pButton type="submit" label="Submit" ></button>
+          </div>
+
+      </div>
+    </p-panel>
+  </form>
+
+
+
+
+</div>
